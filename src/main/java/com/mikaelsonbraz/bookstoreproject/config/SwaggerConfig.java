@@ -20,7 +20,7 @@ public class SwaggerConfig {
     private static final String API_DESCRIPTION = "Bookstore Manager Professional";
     private static final String API_VERSION = "1.0.0";
     private static final String CONTACT_NAME = "Mikaelson Braz";
-    private static final String CONTACT_LINKEDINN = "https://www.linkedin.com/in/mikaelsonbraz/";
+    private static final String CONTACT_LINKEDIN = "https://www.linkedin.com/in/mikaelsonbraz/";
     private static final String CONTACT_EMAIL = "mikaelsonmrn@gmail.com";
 
 
@@ -38,7 +38,11 @@ public class SwaggerConfig {
                 .title(API_TITLE)
                 .description(API_DESCRIPTION)
                 .version(API_VERSION)
-                .contact(new Contact(CONTACT_NAME, CONTACT_LINKEDINN, CONTACT_EMAIL))
+                .contact(new Contact(CONTACT_NAME, CONTACT_LINKEDIN, CONTACT_EMAIL))
                 .build();
     }
+
+
 }
+
+
