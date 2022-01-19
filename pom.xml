@@ -20,27 +20,6 @@
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
-	<profiles>
-		<profile>
-			<id>sonar</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<properties>
-				<sonar.host.url>https://sonarcloud.io/</sonar.host.url>
-				<sonar.exclusions>
-					src/main/java/**/BookstoreprojectApplication.java,
-					src/main/java/**/config/**,
-					src/main/java/**/exception/**,
-					src/main/java/**/dto/**,
-					src/main/java/**/entity/**,
-					src/main/java/**/repository/**,
-					src/main/java/**
-				</sonar.exclusions>
-			</properties>
-		</profile>
-	</profiles>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
