@@ -40,8 +40,8 @@ jobs:
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
         restore-keys: ${{ runner.os }}-m2
     - name: Execute SonarScanner
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: ${{ env.MAVEN_CMD }} sonar:sonar -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: ${{ env.MAVEN_CMD }} sonar:sonar -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
 
